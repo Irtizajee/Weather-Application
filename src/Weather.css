@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fuggles&family=Roboto+Mono:ital,wght@0,100;0,700;1,300;1,600&display=swap');
+#root{
+    background-color: #3a2a69!important;
+}
+.app_body{
+    width: 100vw;
+    height: 100vh;
+
+    background-color:  #3a2a69;
+}
+nav{
+    width: 100vw;
+    height: 70px;
+    background-color: #47309c;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+   
+
+}
+
+.siteName{
+    /* margin-left: 4px; */
+    color: white;
+    font-size: 33px;
+    font-style: italic;
+    font-family: 'Dancing Script', cursive;
+}
+.search{
+    text-align: center;
+    margin-top: 20px;
+}
+.user_input{
+    width: 300px;
+    padding: 7px 20px;
+    outline: none;
+    border: none;
+    border: 1px solid #47309c;
+    border-radius: 20px;
+    background-color: #252245;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.results{
+    width: 100%;
+    height: 380px;
+    /* border: 1px solid red; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1028px){
+    .results{
+        margin: 40px 0px 0px 0px;
+        /* margin-top: 70px!important; */
+        width: 100%;
+        height: auto;
+        /* border: 1px solid red; */
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+    .weather_update{
+        text-align: center;
+        width: auto!important;
+        height: auto!important;
+        /* border: 1px solid blue; */
+        padding: 0px 14px;
+        box-sizing: border-box;
+        /* margin: 40px 0px 0px 0px; */
+        /* margin-top: 150px!important; */
+        box-sizing: border-box;
+        color: white;
+    }
+    .forscast{
+        /* margin-bottom: -50px!important; */
+        height: auto;
+        text-align: center;
+        width: auto!important;
+        /* height: 600px!important; */
+        /* border: 1px solid blue; */
+        padding: 30px 10px;
+        /* margin: 40px 0px 0px 0px; */
+    }
+    .city_country_name{
+        font-size: 30px!important;
+        text-align: center;
+    }
+    .temperature{
+        margin-left: 90px;
+        margin-top: 10px;
+        /* font-family: 'Shadows Into Light', cursive; */
+        font-family: 'Dancing Script', cursive;
+        font-size: 28px!important;
+    }
+    .description{
+        margin-left: 10px!important;
+        font-family: 'Dancing Script', cursive;
+        font-size: 20px!important;
+    }
+    .description p{
+        /* font-weight: bold; */
+        font-size: 21px!important;
+        background-color: #47309c;
+        padding: 0px 6px;
+        box-sizing: border-box;
+    
+    }
+    .forscast{
+        color:white ;
+    }
+    .forecast_hadding{
+        font-size: 34px!important;
+        font-family: 'Dancing Script', cursive;
+    }
+    .forscast_days{
+        width: 100%;
+        height: 70px;
+        background-color: #47309c;
+        margin: 5px 0px;
+        font-size: 20px!important;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-family: 'Great Vibes', cursive;
+    }
+    .error{
+        padding: 10px;
+        height: 17px;
+        /* border: 1px solid red; */
+        margin-top: -10px!important;
+        color: red;
+        font-size: 10px;
+        /* box-sizing: border-box; */
+       
+    
+    }
+    .app_body{
+        width: 100vw;
+        height: auto;
+        
+        background-color:  #3a2a69;
+    }
+
+}
+
+.weather_update{
+    width: 500px;
+    height: 300px;
+    /* border: 1px solid blue; */
+    padding: 0px 14px;
+    box-sizing: border-box;
+    color: white;
+}
+.forscast{
+    width: 500px;
+    height: 300px;
+    /* border: 1px solid blue; */
+}
+.city_country_name{
+    /* font-family: 'Shadows Into Light', cursive; */
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+}
+.temperature{
+    margin-left: 90px;
+    /* font-family: 'Shadows Into Light', cursive; */
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+}
+.description{
+    margin-left: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+}
+.description p{
+    /* font-weight: bold; */
+    font-size: 31px;
+    background-color: #47309c;
+    padding: 0px 6px;
+    box-sizing: border-box;
+
+}
+
+.forscast{
+    color:white ;
+}
+.forecast_hadding{
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+}
+.forscast_days{
+    width: 100%;
+    height: 70px;
+    background-color: #47309c;
+    margin: 5px 0px;
+    font-size: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Great Vibes', cursive;
+}
+.error{
+    padding: 10px;
+    height: 17px;
+    /* border: 1px solid red; */
+    margin: 0;
+    color: red;
+    font-size: 20px;
+    box-sizing: border-box;
+   
+
+}
+.error h3{
+    animation-name: glowUp;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+    transition: .5s ease-in-out;
+
+    /* transform: scale(96%); */
+
+}
+@keyframes glowUp {
+    from
+    {
+        transform: scale(100%);
+    transition: .5s ease-in-out;
+
+    }
+    to
+    {
+        transform: scale(90%);
+    }
+}
